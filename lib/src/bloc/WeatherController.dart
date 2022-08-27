@@ -9,6 +9,7 @@ class WeatherController extends GetxController {
 
   getWeather() async {
     try {
+      isError(false);
       isLoading(true);
       update();
       var result = await Api().getWeather();
@@ -16,7 +17,8 @@ class WeatherController extends GetxController {
       isLoading(false);
       update();
     } catch (e) {
-      isError(false);
+      print(e);
+      isError(true);
       isLoading(false);
       update();
       throw e;

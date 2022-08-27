@@ -16,20 +16,30 @@ class Api {
   }
 
   Future<List<WeatherData>> getWeather() async {
+    print(WeatherApiURL.url);
     var result;
     try {
       Dio dio = getDio();
       result = await dio.get('');
+      if (result != null) {
+        return jsonParse(result.data['list']);
+      }
     } on DioError catch (e) {
-      print(e.toString());
+      print(e);
+      throw e;
+    } catch (e) {
+      print(e);
+      throw e;
     }
-    if (result != null) {
-      return jsonParse(json.decode(result.data));
-    }
+
     return [];
   }
 
   List<WeatherData> jsonParse(List<dynamic> data) {
-    return data.map((job) => new WeatherData.fromJson(job)).toList();
+    return data.map((job) {
+      print("++++");
+      print(job);
+      return new WeatherData.fromJson(job);
+    }).toList();
   }
 }

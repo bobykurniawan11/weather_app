@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:weather_app/constants.dart';
 import 'package:weather_app/src/bloc/WeatherController.dart';
+import 'package:weather_app/src/screens/weather_list.dart';
 
 class Index extends StatefulWidget {
   const Index({Key? key}) : super(key: key);
@@ -28,7 +29,7 @@ class _IndexState extends State<Index> {
       ),
       body: Padding(
         padding: EdgeInsets.all(4),
-        child: Container();
+        child: WeatherList(),
       ),
     );
   }

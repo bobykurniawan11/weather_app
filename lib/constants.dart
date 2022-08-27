@@ -5,7 +5,7 @@ class WeatherApiURL {
 
   static const url = "https://api.openweathermap.org/data/2.5/forecast?lat=" +
       DEFAULTLATITUDE +
-      "&lon=" +
+      "&units=metric&lon=" +
       DEFAULTLONGITUDE +
       "&appid=" +
       APIKEY;
