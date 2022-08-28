@@ -6,7 +6,7 @@
 Download or clone this repo by using the link below:
 
 ```
-https://github.com/bobykurniawan11/weather_app
+https://github.com/bobykurniawan11/weather_app.git
 ```
 
 **Step 2:**
