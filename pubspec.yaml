@@ -2,26 +2,22 @@ name: weather_app
 version: 1.0.0+1
 publish_to: none
 description: A new Flutter project.
-environment: 
-  sdk: '>=2.12.0 <3.0.0'
+environment:
+  sdk: ">=2.12.0 <3.0.0"
 
-dependencies: 
+dependencies:
   cupertino_icons: ^1.0.0
   get: 4.6.5
   dio: ^4.0.6
   cached_network_image: ^3.2.1
-  sizer: ^2.0.15
   jiffy: ^5.0.0
 
-
-  flutter: 
+  flutter:
     sdk: flutter
 
-dev_dependencies: 
-  flutter_test: 
+dev_dependencies:
+  flutter_test:
     sdk: flutter
 
-flutter: 
+flutter:
   uses-material-design: true
-  
-
