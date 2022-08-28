@@ -18,7 +18,7 @@ flutter pub get
 ```
 
 
-### Libraries & Tools Used
+### Dependencies
 * [Dio](https://pub.dev/packages/dio)
 * [get](https://pub.dev/packages/get)
 * [cached_network_image](https://pub.dev/packages/cached_network_image)
