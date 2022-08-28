@@ -67,7 +67,7 @@ class Main {
     temp = json['temp'].toString();
     feelsLike = json['feels_like'].toString();
     tempMin = json['temp_min'].toString();
-    tempMax = json['temm_max'].toString();
+    tempMax = json['temp_max'].toString();
     pressure = json['pressure'];
     seaLevel = json['sea_level'];
     grndLevel = json['grnd_level'];

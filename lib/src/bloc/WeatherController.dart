@@ -14,6 +14,8 @@ class WeatherController extends GetxController {
       update();
       var result = await Api().getWeather();
       weatherData(result);
+      update();
+
       isLoading(false);
       update();
     } catch (e) {

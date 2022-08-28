@@ -29,7 +29,26 @@ class _IndexState extends State<Index> {
       ),
       body: Padding(
         padding: EdgeInsets.all(4),
-        child: WeatherList(),
+        child: GetBuilder<WeatherController>(
+          builder: (ctrl) {
+            if (ctrl.isLoading.isTrue)
+              return Center(
+                child: Container(
+                  height: 25,
+                  width: 25,
+                  child: CircularProgressIndicator(),
+                ),
+              );
+            return Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Expanded(
+                  child: WeatherList(),
+                ),
+              ],
+            );
+          },
+        ),
       ),
     );
   }

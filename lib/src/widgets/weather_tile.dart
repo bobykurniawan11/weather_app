@@ -13,9 +13,16 @@ class WeatherTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: CachedNetworkImage(
-        imageUrl:
-            "http://openweathermap.org/img/wn/${weatherData.weather![0].icon}.png",
+      leading: Container(
+        width: 50,
+        child: Hero(
+          tag: weatherData.dt.toString(),
+          child: CachedNetworkImage(
+            imageUrl:
+                "http://openweathermap.org/img/wn/${weatherData.weather![0].icon}.png",
+            fit: BoxFit.fitWidth,
+          ),
+        ),
       ),
       title: Text(
         Jiffy.unixFromSecondsSinceEpoch(weatherData.dt!).yMMMEdjm.toString(),
