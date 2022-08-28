@@ -19,7 +19,7 @@ flutter pub get
 
 
 ### Libraries & Tools Used
-* [Dio]https://pub.dev/packages/dio)
+* [Dio](https://pub.dev/packages/dio)
 * [get](https://pub.dev/packages/get)
 * [cached_network_image](https://pub.dev/packages/cached_network_image)
 * [jiffy](https://pub.dev/packages/jiffy)
